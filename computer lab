@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    char s1[20],s2[20];
+    int i,j,l=0,f=0;
+    printf("enter the element");
+    scanf("%s",s1);
+    while(s1[i]!='\0')
+    {
+        l++;
+        i++;
+        
+    }
+    for(i=0,j=l-1;i<j;i++,j--)
+    {
+        if(s1[i]!=s1[j])
+        {
+            f=1;
+            break;
+            
+        }
+    } 
+      if(f==1)
+      {
+          printf("it is not palindrome");
+      }
+      else{
+          printf("it is palindrome");
+      }
+      return 0;
+}
